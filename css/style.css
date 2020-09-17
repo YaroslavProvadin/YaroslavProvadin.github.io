@@ -1,0 +1,449 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: Tahoma, sans-serif;
+	line-height: 1.5;
+	color: #333333;
+}
+.menu-bar {
+	background: #04003f;
+	text-align: center;
+}
+.menu-bar ul {
+	display: inline-flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 80px;
+	list-style: none;
+	color: #333333;
+}
+.menu-bar ul li a{
+	width: 130px;
+	margin: 15px;
+	padding: 15px;
+}
+.menu-bar ul li img {
+	width: 200px;
+	margin-left: -400px;
+	margin-bottom: 10px;
+}
+.menu-bar ul li a {
+	text-decoration: none;
+	color: #fff;
+}
+.active, .menu-bar ul li:hover {
+	background: #3f5299;
+	border-radius: 3px;
+}
+.header {
+	font-size: 24px;
+	text-align: center;
+}
+.content {
+	display: flex;
+	box-sizing: border-box;
+	flex: 1 1 100%;
+	max-width: 100%;
+	overflow: hidden;
+	height: 450px;
+	padding: 3rem 0;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 0%, rgba(144,81,218,1) 0%, rgba(52,77,171,1) 69%, rgba(0,71,162,1) 100%, rgba(7,6,97,1) 100%, rgba(9,9,121,1) 100%);
+}
+.illustration {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	z-index: 1;
+    display: inline-block;
+    content: " ";
+    right: 50px;
+	top: 200px;
+	opacity: 80%;
+}
+.main {
+	flex: 1 1 0%;
+	box-sizing: border-box;
+	order: 2;
+	padding-bottom: 60px;
+}
+.block-content {
+	padding-top: 220px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.block-posts {
+	display: flex;
+	flex-wrap: wrap;
+	margin: -14px;
+}
+.first_post {
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 32px;
+        padding-right: 32px;
+	min-height: 300px;
+	background: rgb(255, 255, 255);
+	height: 350px;
+	width: 750px;
+	background-repeat: no-repeat;
+	margin-top: -220px;
+	left: 50%;
+	margin-left: -380px;
+	position: absolute;
+	width: 750px;
+}
+.first_post h2 {
+	display: block;
+	font-size: 38px;
+	font-family: Tahoma ,sans-serif;
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 10px;
+}
+.first_post .field {
+    display: inline;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    box-shadow: 7px 0 0 #fff;
+    font-size: 16px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #04003F;
+}
+.first_post .field-img {
+	height: auto;
+	border-style: none;
+	position: absolute;
+	width: 490px;
+	height: auto;
+	margin-top: -350px;
+	margin-left: 200px;
+	z-index: 1;
+	opacity: 30%;
+}
+.first_post .field-jpg {
+	height: auto;
+	border-style: none;
+	position: absolute;
+	width: 490px;
+	height: 320px;
+	z-index: 1;
+	opacity: 30%;
+	margin-top: -305px;
+	margin-left: 200px	
+}
+.first_post .field-npg {
+	height: auto;
+	border-style: none;
+	position: absolute;
+	width: 100%;
+	height: 320px;
+	z-index: 1;
+	opacity: 30%;
+	margin-top: -280px;
+	margin-left: 200px
+}
+.description {
+	position: relative;
+	margin-bottom: 50px;
+	height: 250px;
+	background-color: #d5dae8;
+	padding-top: 50px;
+}
+.block-ai {
+	max-width: 1140px;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 4px;
+	margin-bottom: 50px;
+	padding: 75px 70px 30px;
+}
+.title ::after {
+	content: " ";
+	display: block;
+	background-color: #F0F2FA;
+	height: 2px;
+	width: 280px;
+	position: absolute;
+	left: 50%;
+	bottom: -22px;
+	margin-left: -140px;
+	background-repeat: no-repeat;
+	box-sizing: inherit;
+}
+.title {
+	font-size: 38px;
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	text-align: center;
+	color: #04003F;
+	margin-top: -50px;
+}
+.description-text {
+	font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    text-align: center;
+	color: #3A3B41;
+	font-size: 18px;
+}
+.title-after {
+	content: " ";
+	display: block;
+	width: 90px;
+	height: 4px;
+	background: linear-gradient(91deg,#7bd5ca,#4354b6);
+	position: relative;
+	left: 50%;
+	bottom: -10px;
+	margin-left: -45px;
+}
+.description-text p {
+	margin-top: 40px;
+}
+.basic-information {
+	background-image: linear-gradient(163deg,#7bd5ca,#4354b6);
+	margin-top: -150px;
+	margin-bottom: -291px;
+	padding-top: 200px;
+	padding-bottom: 340px;
+}
+.bas-information {
+	margin-top: -150px;
+	margin-bottom: -291px;
+	padding-top: 200px;
+	padding-bottom: 340px;
+}
+.block-information {
+	padding: 55px 0;
+	background-color: #fff;
+	border-radius: 4px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.blck-information {
+	padding: 55px 0;
+	background-color: #fff;
+	border-radius: 4px;
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.paragraph {
+	margin-bottom: 50px;
+	font-size: 16px;
+	text-rendering: optimizeLegibility;
+}
+.title-paragraph {
+	background: url(/themes/builtin/css/assets/blue-pattern.png) repeat-x;
+    background-size: 100%;
+    padding-top: 30px;
+    font-size: 28px;
+    font-family: "Barlow Condensed",sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: normal;
+    color: #04003F;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 55px auto;
+    position: relative;
+}
+.after {
+	content: " ";
+	display: block;
+	width: 90px;
+	height: 4px;
+	background: linear-gradient(91deg,#7bd5ca,#4354b6);
+	position: absolute;
+	left: 50%;
+	bottom: -10px;
+	margin-left: -45px;
+}
+.paragraph-text {
+	margin: 0 195px;
+	font-size: 20px;
+	font-family: "Lora",serif;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	line-height: 1.75;
+	color: #3A3B41;
+}
+.paragraph-text p {
+	margin-bottom: 30px;
+}
+.paragraph-text ol {
+	margin-left: 80px;
+	margin-bottom: 30px;
+}
+.paragraph-text li {
+	list-style: decimal inside;
+	font-weight: bold;
+}
+.paragraph-text h1 {
+	font-weight: lighter;
+}
+.paragraph-text h2 {
+	font-weight: bold;
+}
+.deepmind {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 20px;
+}
+.block-deepmind figcaption {
+	font-size: 13px;
+	line-height: 1.53846;
+	letter-spacing: .125px;
+	text-align: right;
+	margin-top: -20px;
+	color: #737888;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.block-table {
+	margin: 0 auto;
+	max-width: 1024px;
+	margin: 0 0 20px;
+	display: block;
+}
+.table {
+	border-collapse: collapse;
+	width: 100%;
+}
+.block-table tr {
+	background: linear-gradient(90deg,hsla(0,0%,96%,0),#f5f5f5 50%,hsla(0,0%,96%,0));
+	padding: 0 50px;
+}
+.block-table td {
+	padding: 15px;
+	font-size: 17px;
+	line-height: 1.33333;
+	text-align: center;
+}
+.snake {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 20px;
+}
+.ai-snake figcaption {
+	font-size: 13px;
+	line-height: 1.53846;
+	letter-spacing: .125px;
+	text-align: right;
+	margin-top: -20px;
+	color: #737888;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.processing figcaption {
+	font-size: 13px;
+	line-height: 1.53846;
+	letter-spacing: .125px;
+	text-align: right;
+	margin-top: -20px;
+	color: #737888;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.process {
+	width: 100%;
+	height: 600px;
+	margin-bottom: 20px;
+}
+.triangle {
+	width: 100%;
+	height: 600px;
+	margin-bottom: 20px;
+}
+.ai-look figcaption {
+	font-size: 13px;
+	line-height: 1.53846;
+	letter-spacing: .125px;
+	text-align: right;
+	margin-top: -20px;
+	color: #737888;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.article-content a {
+	color: inherit;
+}
+.article-content p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+.difference figcaption {
+	font-size: 13px;
+	line-height: 1.53846;
+	letter-spacing: .125px;
+	text-align: right;
+	margin-top: -20px;
+	color: #737888;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.deeplearning {
+	width: 100%;
+	height: 400px;
+	margin-bottom: 20px;
+}
+.deep-learning figcaption {
+	font-size: 13px;
+	line-height: 1.53846;
+	letter-spacing: .125px;
+	text-align: right;
+	margin-top: -20px;
+	color: #737888;
+	margin-right: 100px;
+	margin-bottom: 20px;
+}
+.deep-neural {
+	width: 600px;
+	height: 250px;
+	margin-bottom: 20px;
+}
+.result {
+	width: 600px;
+	height: 210px;
+	margin-bottom: 20px;
+}
+.forecast-price {
+	width: 600px;
+	height: 350px;
+	margin-bottom: 20px;
+}
+.lost-function {
+	width: 600px;
+	height: 350px;
+	margin-bottom: 20px;
+}
+.content-information {
+	display: flex;
+	box-sizing: border-box;
+	flex: 1 1 100%;
+	max-width: 100%;
+	overflow: hidden;
+	height: 700px;
+	padding: 3rem 0;
+	background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fventurebeat.com%2Fwp-content%2Fuploads%2F2018%2F08%2Fartificial-intelligence.jpg%3Ffit%3D2371%252C1499%26strip%3Dall&f=1&nofb=1);
+}
